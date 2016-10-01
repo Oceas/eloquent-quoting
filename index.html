@@ -5,17 +5,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-          $.get("http://api.icndb.com/jokes/random/", function(data, status) {
-               $("#quote").html(data.value.joke);
-          });
+            $.get("http://api.icndb.com/jokes/random/", function(data, status) {
+                $("#quote").html(data.value.joke);
+            });
         });
     </script>
+    <style>
+        .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+        }
+    </style>
+
+    </style>
 </head>
 
 <body>
 
-    <h1 id="quote" >Filler Quote</h1>
-    <h2 id="author" >Chuck Norris</h2>
+    <h1 id="quote">Filler Quote</h1>
+    <h2 id="author">-Chuck Norris</h2>
+
+<div class="center">
+  <h1 style="color:red;">Your God</h1>
+  <img style="width:100%;"src="our_god.jpg" />
+</div>
 
 </body>
 
