@@ -5,9 +5,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-          $.get("http://quotes.rest/qod.json", function(data, status) {
-              alert("Data: " + data.contents.quotes[0].quote + " By " + data.contents.quotes[0].author );
-               $("#quote").html(data.contents.quotes[0].quote);
+          $.get("http://api.icndb.com/jokes/random/", function(data, status) {
+               $("#quote").html(data.value.joke);
           });
         });
     </script>
@@ -16,8 +15,7 @@
 <body>
 
     <h1 id="quote" >Filler Quote</h1>
-    <h2 id="author" >Fillter Name</h2>
-    <p>I don't particularly know what I'm doing but I suppose if I can pretend that I do and make it believable, then it may just be the same thing as if I did know what I was doing.</p>
+    <h2 id="author" >Chuck Norris</h2>
 
 </body>
 
