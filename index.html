@@ -7,6 +7,7 @@
         $(document).ready(function() {
           $.get("http://quotes.rest/qod.json", function(data, status) {
               alert("Data: " + data.contents.quotes[0].quote + " By " + data.contents.quotes[0].author );
+               $("#quote").html(data.contents.quotes[0].quote);
           });
         });
     </script>
@@ -14,8 +15,8 @@
 
 <body>
 
-    <h1>Filler Quote</h1>
-    <h2>Fillter Name</h2>
+    <h1 id="quote" >Filler Quote</h1>
+    <h2 id="author" >Fillter Name</h2>
 
 </body>
 
