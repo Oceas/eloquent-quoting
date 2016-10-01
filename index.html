@@ -1,7 +1,21 @@
+<!DOCTYPE html>
 <html>
 
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $.get("http://quotes.rest/qod.json", function(data, status) {
+              alert("Data: " + data.contents.quotes[0].quote + " By " + data.contents.quotes[0].author );
+          });
+        });
+    </script>
+</head>
+
 <body>
-<p>The beginning of something great.</p>
+
+    <h1>Filler Quote</h1>
+    <h2>Fillter Name</h2>
 
 </body>
 
