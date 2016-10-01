@@ -1,2 +1,2 @@
 # eloquent-quoting
-Generates random quotes from random sources.
+Provides quote of the day.
